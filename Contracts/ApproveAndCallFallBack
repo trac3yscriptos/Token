@@ -1,0 +1,16 @@
+pragma solidity ^0.4.18;
+
+  //======================================================================
+  //  SafeMath Library                                                         
+  //                                                                                
+  //  (c) Trac3y / TRACEinc 2018. The MIT Licence.                              
+  //======================================================================
+
+
+	//=======================================================================
+         ApproveAndCallFallBack
+	//=======================================================================
+  
+  	contract ApproveAndCallFallBack {
+    function receiveApproval(address from, uint256 tokens, address token, bytes data) public;
+}
