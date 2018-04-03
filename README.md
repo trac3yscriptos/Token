@@ -3,13 +3,10 @@
 what i want
 
 
-Token / Plain Jane token . value is in uses , need volume to last 30 days while so many is locked off market
+Token / Plain Jane token . value is in uses , 
+need volume to last 30 days while so many is locked off market
 1000 000 000 
 18 
-
-
-
-
 Maths
 Ownable
 Erc20
@@ -17,7 +14,8 @@ Standard       \\ seperate features first
 
 Ico / 
 
-Finalize/super // Any eth go to wallet ?,most there already as it gets transfered as it comes after refundable time expire(cap reached)
+Finalize/super // Any eth go to wallet ?,most there already as it gets transfered as 
+                  it comes after refundable time expire(cap reached)
 Claimable      // ? whats to claim its mintable . maybe wrong sent coin?
 Mintable       // users get coins as they buy .need to mint pre determined allocated tokens to wallets at ico end
 capped         // mint at end wil bring totals to what ever unless it reaches cap then just bounties and other owed tokens
