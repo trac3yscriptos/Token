@@ -19,7 +19,7 @@ pragma solidity ^0.4.18;
 
  // constructor sets present `owner` of contract as the sender
 
-  function Ownable() public {
+  function Owned() public {
     owner = msg.sender;
   }
 
