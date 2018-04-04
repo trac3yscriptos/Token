@@ -112,7 +112,8 @@ contract MyFixedAmountToken is ERC20, Owned {
     function FixedSupplyToken() public {
         symbol = "MFAT";                                  // Tokens initials :)
         name = "MyFixedAmountToken";                      // Name of your Token
-        decimals = 18;10000000000 * 10**uint(decimals);   // 10 Billion
+        decimals = 18;
+	_totalSupply = 10000000000 * 10**uint(decimals);   // 10 Billion
         balances[owner] = _totalSupply;                   
         Transfer(address(0), owner, _totalSupply);
     }
