@@ -108,6 +108,23 @@ contract MyFixedAmountToken is ERC20, Owned {
         Transfer(address(0), owner, _totalSupply);
     }
     
+    // =====================================================================
+    // Total supply                                            // basicToken
+    // =====================================================================
+    
+    function totalSupply() public constant returns (uint) {
+        return _totalSupply  - balances[address(0)];
+    }
+
+
+    // =====================================================================
+    // Get the token balance for Token owner                   // basicToken
+    // =====================================================================
+    function balanceOf(address tokenOwner) public constant returns (uint balance) {
+        return balances[tokenOwner];
+    }
+
+    
     3##########################3#####################3##########################3
     3#####################3 Add token transaction details 3#####################3
     3##########################3#####################3##########################3
@@ -120,10 +137,11 @@ contract MyFixedAmountToken is ERC20, Owned {
     }
 
   // =====================================================================
-  // onlyOwner can transfer out any accidentally sent ERC20 tokens
+  // onlyOwner can transfer out any accidentally sent ERC20 tokens 
   // =====================================================================
   
     function transferAnyERC20Token(address tokenAddress, uint tokens) public onlyOwner returns (bool success) {
         return ERC20(tokenAddress).transfer(owner, tokens);
     }
+ 
 }
